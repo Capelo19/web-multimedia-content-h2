@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 2 - Multimedia Production</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            line-height: 1.6;
+            background-color: #f4f4f9;
+        }
+        h1, h2 { color: #333; }
+        .section {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        @font-face {
+            font-family: 'LoveDaysTTF';
+            src: url('fonts/LoveDays.ttf') format('truetype');
+        }
+        @font-face {
+            font-family: 'LoveDaysOTF';
+            src: url('fonts/LoveDays.otf') format('opentype');
+        }
+        @font-face {
+            font-family: 'LoveDaysWOFF';
+            src: url('fonts/LoveDays.woff') format('woff');
+        }
+
+        .nome-ttf { font-family: 'LoveDaysTTF', sans-serif; font-size: 24px; }
+        .nome-otf { font-family: 'LoveDaysOTF', sans-serif; font-size: 24px; color: blue; }
+        .nome-woff { font-family: 'LoveDaysWOFF', sans-serif; font-size: 24px; color: green; }
+    </style>
+</head>
+<body>
+
+    <h1>Homework 2: Web Multimedia Content</h1>
+
+    <div class="section">
+        <h2>1. Name and Surname with Specific Fonts</h2>
+        <p class="nome-ttf">Francisco Capelo (Rendered in TTF)</p>
+        <p class="nome-otf">Francisco Capelo (Rendered in OTF)</p>
+        <p class="nome-woff">Francisco Capelo (Rendered in WOFF)</p>
+    </div>
+
+    <div class="section">
+        <h2>2. Photos in Different Formats</h2>
+        
+        <h3>JPEG Format</h3>
+        <img src="images/foto1.jpg" alt="A photo in JPG format" width="400">
+        <p><strong>Explanation:</strong> This image is in JPG format. JPG is a lossy format (DCT algorithm) ideal for digital photography because it compresses complex colors well.</p>
+
+        <h3>HDR (High Dynamic Range) Photo Simulation</h3>
+        <img src="images/foto-hdr.jpg" alt="HDR photo example" width="400">
+        <p><strong>Explanation:</strong> This represents an HDR image. HDR provides higher contrast than standard dynamic range (SDR), preserving details in both the darkest and brightest areas. It requires HDR-compatible devices to view its full potential.</p>
+    </div>
+
+    <div class="section">
+        <h2>3. Graphics in Different Formats</h2>
+        
+        <h3>PNG Format</h3>
+        <img src="images/grafico.png" alt="A graphic in PNG format" width="300">
+        <p><strong>Explanation:</strong> This is a PNG graphic. PNG is a lossless format (DEFLATE algorithm) that supports 24 or 32-bit graphics and is highly suitable for images requiring transparency.</p>
+
+        <h3>SVG (Scalable Vector Graphic)</h3>
+        <svg height="100" width="100">
+            <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+        </svg>
+        <p><strong>Explanation:</strong> This is an SVG graphic. SVG is an XML-based vector image format. Because it is vector-based (mathematical shapes), it scales perfectly without losing quality, reducing the amount of data needed to transfer.</p>
+    </div>
+
+    <div class="section">
+        <h2>4. Sound Element</h2>
+        <p>Here is an embedded audio file (MP3/OGG format supported by HTML5):</p>
+        <audio controls>
+            <source src="audio/teu-som.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <div class="section">
+        <h2>5. GIF Animation</h2>
+        <img src="images/ronaldo-gif-13.gif" alt="Animated GIF example">
+        <p><strong>Explanation:</strong> This is an animated GIF. The GIF format includes information about timing between frames, transparency, color palette, and looping. It is limited to 8-bit graphics (256 colors).</p>
+    </div>
+
+    <div class="section">
+        <h2>6. Embedded YouTube Video</h2>
+        <p>Example using the Muppet Bohemian Rhapsody from the class slides:</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+</body>
+</html>
